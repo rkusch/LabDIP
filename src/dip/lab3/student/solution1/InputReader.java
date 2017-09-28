@@ -12,6 +12,6 @@ package dip.lab3.student.solution1;
 public interface InputReader {
     
   public abstract void inputData(String data);
-  public abstract void getData();
+  public abstract String getData();
  
 }

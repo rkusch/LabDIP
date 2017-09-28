@@ -10,5 +10,12 @@ package dip.lab3.student.solution1;
  * @author ryan
  */
 public class Startup {
-    
+
+    public static void main(String[] args) {
+
+        InputReader input = new KeyboardInputReader("This is my message");
+        DisplayOutput output = new DisplayConsoleOutput(input);
+        output.showOutput();
+    }
+
 }

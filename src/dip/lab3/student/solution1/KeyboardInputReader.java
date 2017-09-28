@@ -10,19 +10,25 @@ package dip.lab3.student.solution1;
  * @author rkusch
  */
 public class KeyboardInputReader implements InputReader {
-    private String data;
+
+    private String input;
 
     @Override
-    public final void inputData(String data) {
-        if (data == null) {
-            throw new UnsupportedOperationException("No input was entered");
+    public final void inputData(String input) {
+        if (input == null) {
+            throw new IllegalArgumentException("Please input some information.");
         }
-        this.data = data;
+        this.input = input;
     }
 
     @Override
-    public final void getData() {
-        return this.data;
+    public final String getData() {
+        return input;
     }
+
+    public KeyboardInputReader(String input) {
+        this.input = input;
+    }
+    
     
 }

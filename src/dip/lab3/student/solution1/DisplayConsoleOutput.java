@@ -12,10 +12,16 @@ package dip.lab3.student.solution1;
 public class DisplayConsoleOutput implements DisplayOutput {
     private InputReader input;
 
+    public DisplayConsoleOutput(InputReader input) {
+        this.input = input;
+    }
+
     @Override
     public final void showOutput() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println(input.getData());
     }
+
+   
     
     
 }

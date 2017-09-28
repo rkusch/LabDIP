@@ -12,8 +12,10 @@ package dip.lab3.student.solution1;
 public class DisplayGuiOutput implements DisplayOutput {
 
     @Override
-    public final void showOutput() {
+    public void showOutput() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+
     
 }

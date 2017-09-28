@@ -10,15 +10,19 @@ package dip.lab3.student.solution1;
  * @author rkusch
  */
 public class FileInputReader implements InputReader {
+    private String input;
 
     @Override
-    public final void inputData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final void inputData(String input) {
+        if (input == null) {
+            throw new IllegalArgumentException("Please input some information.");
+        }
+        this.input = input;
     }
 
     @Override
-    public final void getData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final String getData() {
+        return input;
     }
     
 }

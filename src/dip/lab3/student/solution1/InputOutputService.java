@@ -10,7 +10,15 @@ package dip.lab3.student.solution1;
  * @author ryan
  */
 public class InputOutputService {
+    
+    
     private DisplayOutput output;
+    
+    private final String obtainMessage(InputReader input) {
+       return input.getData();
+    };
+    
+    
     
     
 }
