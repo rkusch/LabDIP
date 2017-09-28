@@ -13,11 +13,11 @@ public class TipService {
 
     private TipCalculator calc;
 
-    public TipCalculator getCalc() {
+    public final TipCalculator getCalc() {
         return calc;
     }
 
-    public void setCalc(TipCalculator calc) {
+    public final void setCalc(TipCalculator calc) {
         this.calc = calc;
     }
 
@@ -25,7 +25,7 @@ public class TipService {
         this.calc = calc;
     }
 
-    public double getTip() {
+    public final double getTip() {
         return calc.getTip();
     }
 
