@@ -21,10 +21,10 @@ public class Startup {
 
     public static void main(String[] args) {
         
-        TipCalculator calc = new FoodServiceTipCalculator(ServiceQuality.GOOD, 1000);
+        TipCalculator calc = new BaggageServiceTipCalculator(ServiceQuality.GOOD, 10);
         TipService bill = new TipService(calc);
-        Output consoleOutput = new ConsoleOutput(calc,bill);
-        consoleOutput.displayOutput();
+        Output output = new ConsoleOutput(calc,bill);
+        output.displayOutput();
     }
 
 }

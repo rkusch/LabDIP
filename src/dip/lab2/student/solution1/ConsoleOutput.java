@@ -21,8 +21,6 @@ public class ConsoleOutput implements Output {
         
     }
 
-    
-
     @Override
     public final void displayOutput() {
         System.out.println("Pretip bill amount: " + calc.getPretipBillAmount());
