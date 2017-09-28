@@ -7,8 +7,8 @@ package dip.lab3.student.solution1;
 
 /**
  *
- * @author rkusch
+ * @author ryan
  */
-public class ConsoleDisplayOutput {
+public class Startup {
     
 }

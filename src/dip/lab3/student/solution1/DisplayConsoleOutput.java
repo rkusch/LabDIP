@@ -9,11 +9,13 @@ package dip.lab3.student.solution1;
  *
  * @author rkusch
  */
-public class FileInputReader implements InputReader {
+public class DisplayConsoleOutput implements DisplayOutput {
+    private InputReader input;
 
     @Override
-    public void inputData() {
+    public void showOutput() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
     
 }

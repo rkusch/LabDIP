@@ -9,6 +9,11 @@ package dip.lab3.student.solution1;
  *
  * @author rkusch
  */
-public class KeyboardInputReader {
+public class KeyboardInputReader implements InputReader {
+
+    @Override
+    public void inputData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
