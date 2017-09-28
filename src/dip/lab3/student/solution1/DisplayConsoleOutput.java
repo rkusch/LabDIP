@@ -13,7 +13,7 @@ public class DisplayConsoleOutput implements DisplayOutput {
     private InputReader input;
 
     @Override
-    public void showOutput() {
+    public final void showOutput() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

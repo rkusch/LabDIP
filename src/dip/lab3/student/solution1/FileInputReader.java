@@ -12,7 +12,12 @@ package dip.lab3.student.solution1;
 public class FileInputReader implements InputReader {
 
     @Override
-    public void inputData() {
+    public final void inputData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public final void getData() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

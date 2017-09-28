@@ -10,10 +10,19 @@ package dip.lab3.student.solution1;
  * @author rkusch
  */
 public class KeyboardInputReader implements InputReader {
+    private String data;
 
     @Override
-    public void inputData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final void inputData(String data) {
+        if (data == null) {
+            throw new UnsupportedOperationException("No input was entered");
+        }
+        this.data = data;
+    }
+
+    @Override
+    public final void getData() {
+        return this.data;
     }
     
 }

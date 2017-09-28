@@ -7,11 +7,10 @@ package dip.lab3.student.solution1;
 
 /**
  *
- * @author rkusch
+ * @author ryan
  */
-public interface InputReader {
+public class InputOutputService {
+    private DisplayOutput output;
     
-  public abstract void inputData(String data);
-  public abstract void getData();
- 
+    
 }
